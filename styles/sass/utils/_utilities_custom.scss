@@ -1,0 +1,49 @@
+// ******** IMPORTS VARIABLES COLORS *********** //
+@import "./variables_overrides";
+
+// ******** START UTILITIES *********** //
+$utilities: (
+  "text-color": (
+    property: color,
+    class: text,
+    values: (
+      "midnightBlue": $midnightBlue,
+    ),
+  ),
+  "background-color": (
+    property: background-color,
+    class: bg,
+    values: (
+      "royalBlue": $royalBlue,
+      "cloudWhite": $cloudWhite,
+    ),
+  ),
+  "padding-y": (
+    responsive: true,
+    property: padding-top padding-bottom,
+    class: py,
+    values: (
+      0: 0,
+      1: $spacer * 0.25,
+      2: $spacer * 0.5,
+      3: $spacer,
+      4: $spacer * 1.5,
+      5: $spacer * 3,
+    ),
+  ),
+  "gap": (
+    responsive: true,
+    property: gap,
+    class: gap,
+    values: (
+      0: 0,
+      1: $spacer * 0.25,
+      2: $spacer * 0.5,
+      3: $spacer,
+      4: $spacer * 1.5,
+      5: $spacer * 3,
+      6: $spacer * 5,
+    ),
+  ),
+);
+// ******** END UTILITIES *********** //

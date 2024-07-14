@@ -1,3 +1,5 @@
 // ******** START IMPORTS MODULES *********** //
-@use "./base/normalize";
+@import "./base/normalize";
+@import "../sass/utils/utilities_custom";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 // ******** END IMPORTS MODULES *********** //
