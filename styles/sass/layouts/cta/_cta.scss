@@ -1,0 +1,16 @@
+// ******* START SECTION CTA ********** //
+
+.cta-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+// ******* END SECTION CTA ********** //

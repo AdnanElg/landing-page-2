@@ -102,7 +102,7 @@
     <!-- ******* END SECTION HERO ********** -->
     <!-- ******* START SECTION FEATURES ********** -->
     <section
-      class="container d-flex justify-content-around align-items-center flex-row mt-5 pt-5 mb-5 pb-5"
+      class="container d-flex justify-content-around align-items-center flex-column flex-lg-row mt-5 pt-5 mb-5 pb-5 gap-6 gap-lg-0"
     >
       <article
         class="d-flex flex-column justify-content-start align-items-start gap-4"
@@ -157,10 +157,10 @@
     <!-- ******* START SECTION CONTENT 1 ********** -->
     <section class="bg-cloudWhite h-auto w-100 my-5 py-5">
       <div
-        class="container d-flex justify-content-around align-items-center flex-row py-5 mt-5"
+        class="container d-flex justify-content-around align-items-center flex-column flex-xl-row py-5 mt-5"
       >
         <div
-          class="d-flex justify-content-start align-items-start flex-column gap-4"
+          id="content-1-col-content"
         >
           <h3 class="fw-bold fs-2 text-midnightBlue lh-sm">
             Getting started with <br />
@@ -197,7 +197,7 @@
     <!-- ******* START SECTION FACTS ********** -->
     <section class="container-fluid p-0 my-5">
       <div
-        class="container d-flex flex-row justify-content-around align-items-center my-5 py-5"
+        class="container d-flex flex-lg-row flex-column justify-content-around align-items-center my-5 py-5 gap-5 gap-lg-0"
       >
         <div
           class="d-flex flex-row justify-content-center align-items-center gap-5"
@@ -246,35 +246,36 @@
         </p>
       </div>
       <div
-        class="container d-flex flex-row justify-content-around align-items-cente mt-5 pt-5"
+        id="content-2-container"
+        class="container"
       >
         <img
           src="./assets/svg/img-3.svg"
           alt="img-3"
           title="img-3"
-          class="img-fluid mx-auto"
+          class="img-fluid"
         />
-        <div class="d-flex flex-column justify-content-end align-items-end">
+        <div class="content">
           <div
-            class="d-flex flex-row justify-content-start align-items-start gap-5 mb-4"
+            class="block"
           >
             <span
-              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center w-8 h-37"
+              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center px-3 py-1"
               >1</span
             >
             <div class="d-flex flex-column gap-3">
               <h4 class="text-midnightBlue fw-bold fs-5">Create a project</h4>
               <p class="text-midnightBlue fw-lighter fs-6 w-70 lh-base">
-                With lots of unique blocks, you can easily build a page without
+                With lots of unique blocks, you can easily <br/> build a page without
                 coding.
               </p>
             </div>
           </div>
           <div
-            class="d-flex flex-row justify-content-start align-items-start gap-5 mb-4"
+            class="block"
           >
             <span
-              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center w-8 h-37"
+              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center px-3 py-1"
               >2</span
             >
             <div class="d-flex flex-column gap-3">
@@ -282,16 +283,16 @@
                 Assign related people
               </h4>
               <p class="text-midnightBlue fw-lighter fs-6 w-70 lh-base">
-                With lots of unique blocks, you can easily build a page without
+                With lots of unique blocks, you can easily <br/> build a page without
                 coding.
               </p>
             </div>
           </div>
           <div
-            class="d-flex flex-row justify-content-start align-items-start gap-5 mb-4"
+            class="block"
           >
             <span
-              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center w-8 h-37"
+              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center px-3 py-1"
               >3</span
             >
             <div class="d-flex flex-column gap-3">
@@ -299,7 +300,7 @@
                 Make it done on-time
               </h4>
               <p class="text-midnightBlue fw-lighter fs-6 w-70 lh-base">
-                With lots of unique blocks, you can easily build a page without
+                With lots of unique blocks, you can easily <br/> build a page without
                 coding.
               </p>
             </div>
@@ -311,7 +312,7 @@
     <!-- ******* START SECTION TESTIMONIAL ********** -->
     <section class="bg-cloudWhite h-auto w-100 py-5">
       <div
-        class="container d-flex flex-row justify-content-around align-items-center"
+        class="container d-flex flex-lg-row flex-column justify-content-around align-items-center"
       >
       <div class="d-flex justify-content-center align-items-center flex-column gap-4">
         <div class="d-flex justify-content-center align-items-center flex-column gap-4 mt-5 pt-5">
@@ -364,31 +365,31 @@
             With lots of unique blocks, you can easily build a page without <br/> coding. Build your next landing page.
           </p>
         </div>
-        <div class="d-flex flex-row gap-5 justify-content-center align-items-center mt-5 pt-4">
-          <div class="bg-white rounded-3 w-25 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
-            <span class="text-royalBlue fw-bold w-25 py-2 rounded-4 text bg-royalBlueLight text-center">Basic</span>
+        <div class="d-flex flex-xl-row flex-column gap-5 justify-content-center align-items-center mt-5 pt-4">
+          <article class="bg-white rounded-3 w-xl-25 w-50 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
+            <span class="text-royalBlue fw-bold px-4 py-2 rounded-4 text bg-royalBlueLight text-center fs-6">Basic</span>
             <span class="text-center fw-bold display-5 pt-4">$29</span>
             <p class="text-center text-midnightBlue fs-5 fw-lighter opacity-75">One time purchase</p>
             <p class="text-center text-midnightBlue fs-6 fw-light lh-lg">With lots of unique blocks, you can <br/> easily build a page without coding. <br/> Build your next landing page.</p>
             <button class="fw-bold text-white border-0 fs-6 bg-royalBlue py-4 px-4 rounded-3 w-90">Get started for free</button>
-          </div>
-          <div class="bg-white rounded-3 w-25 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
-            <span class="text-royalBlue fw-bold w-25 py-2 rounded-4 text bg-royalBlueLight text-center">Standard</span>
+          </article>
+          <article class="bg-white rounded-3 w-xl-25 w-50 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
+            <span class="text-royalBlue fw-bold px-4 py-2 rounded-4 text bg-royalBlueLight text-center fs-6">Standard</span>
             <span class="text-center fw-bold display-5 pt-4">$49</span>
             <p class="text-center text-midnightBlue fs-5 fw-lighter opacity-75">One time purchase</p>
             <p class="text-center text-midnightBlue fs-6 fw-light lh-lg">With lots of unique blocks, you can <br/> easily build a page without coding. <br/> Build your next landing page.</p>
             <button class="fw-bold text-white border-0 fs-6 bg-royalBlue py-4 px-4 rounded-3 w-90">Get started for free</button>
-          </div>
-          <div class="bg-white rounded-3 w-25 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
-            <span class="text-royalBlue fw-bold w-25 py-2 rounded-4 text bg-royalBlueLight text-center">Premium</span>
+          </article>
+          <article class="bg-white rounded-3 w-xl-25 w-50 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
+            <span class="text-royalBlue fw-bold px-4 py-2 rounded-4 text bg-royalBlueLight text-center fs-6">Premium</span>
             <span class="text-center fw-bold display-5 pt-4">$99</span>
             <p class="text-center text-midnightBlue fs-5 fw-lighter opacity-75">One time purchase</p>
             <p class="text-center text-midnightBlue fs-6 fw-light lh-lg">With lots of unique blocks, you can <br/> easily build a page without coding. <br/> Build your next landing page.</p>
             <button class="fw-bold text-white border-0 fs-6 bg-royalBlue py-4 px-4 rounded-3 w-90">Get started for free</button>
-          </div>
+          </article>
         </div>
         <div class="d-flex flex-column mt-5 pt-5">
-          <div class="d-flex justify-content-center gap-7 mt-5 pt-5">
+          <div class="d-flex flex-xl-row flex-column align-items-center justify-content-center gap-7 mt-5 pt-5">
             <div class="d-flex flex-column justify-content-start align-items-start">
                 <div class="d-flex gap-4 flex-row justify-content-start align-items-start">
                   <span class="rounded-circle bg-royalGreen px-3 h-auto text-center fs-5 text-white">?</span>
@@ -409,7 +410,7 @@
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-center gap-7 mt-5 pt-5">
+          <div class="d-flex  flex-xl-row flex-column align-items-center justify-content-center gap-7 mt-5 pt-5">
             <div class="d-flex flex-column justify-content-start align-items-start">
               <div class="d-flex gap-4 flex-row justify-content-start align-items-start">
                 <span class="rounded-circle bg-royalGreen px-3 h-auto text-center fs-5 text-white">?</span>
@@ -438,8 +439,8 @@
     <!-- ******* END SECTION PRICING ********** -->
     <!-- ******* START SECTION CTA ********** -->
     <section class="container-fluid my-5 py-5 px-0">
-      <div class="container d-flex justify-content-around align-items-center pb-3">
-        <div class="d-flex justify-content-start align-items-start flex-column gap-3 my-5">
+      <div class="container d-flex flex-xl-row flex-column justify-content-around align-items-center pb-3">
+        <div class="gap-3 my-5 cta-text">
           <h5 class="text-midnightBlue fs-2 fw-bold">
             Build better landing page fast
           </h5>
@@ -460,8 +461,8 @@
     <!-- ******* END SECTION CTA ********** -->
     <!-- ******* START SECTION FOOTER ********** -->
     <section class="container py-3">
-      <div class="d-flex flex-row justify-content-around align-items-start py-5">
-        <div class="d-flex flex-column justify-content-start align-items-start gap-4">
+      <div id="footer" class="py-5 gap-xl-0 gap-6">
+        <div class="block-text gap-4">
           <h5 class="text-midnightBlue fs-2 fw-bold">Brainwave.io</h5>
           <p class="fs-6 fw-lighter text-midnightBlue lh-base">With lots of unique blocks, you can <br/> easily build a page without coding. <br/> Build your next landing page.</p>
           <div class="d-flex justify-content-around align-items-center flex-row gap-5">
@@ -471,8 +472,8 @@
             <a href="#" class="text-decoration-none"><img src="./assets/svg/social-4.svg" alt="social-4" title="social-4" class="img-fluid"></a>
           </div>
         </div>
-        <div class="d-flex align-items-start gap-6">
-          <div class="d-flex justify-content-start align-items-start flex-column gap-5">
+        <div class="container-links gap-6">
+          <div class="block-links gap-5">
             <h6 class="fs-6 text-midnightBlue fw-lighter opacity-50">Company</h6>
             <ul class="list-unstyled d-flex flex-column gap-4">
               <li class="fs-6 text-midnightBlue fw-lighter"><a href="#" class="text-decoration-none text-midnightBlue">About us</a></li>
@@ -481,7 +482,7 @@
               <li class="fs-6 text-midnightBlue fw-lighter"><a href="#" class="text-decoration-none text-midnightBlue">Press</a></li>
             </ul>
           </div>
-          <div class="d-flex justify-content-start align-items-start flex-column gap-5">
+          <div class="block-links gap-5">
             <h6 class="fs-6 text-midnightBlue fw-lighter opacity-50">Product</h6>
             <ul class="list-unstyled d-flex flex-column gap-4">
               <li class="fs-6 text-midnightBlue fw-lighter"><a href="#" class="text-decoration-none text-midnightBlue">Features</a></li>
@@ -491,7 +492,7 @@
               <li class="fs-6 text-midnightBlue fw-lighter"><a href="#" class="text-decoration-none text-midnightBlue">Support</a></li>
             </ul>
           </div>
-          <div class="d-flex justify-content-start align-items-start flex-column gap-5">
+          <div class="block-links gap-5">
             <h6 class="fs-6 text-midnightBlue fw-lighter opacity-50">Services</h6>
             <ul class="list-unstyled d-flex flex-column gap-4">
               <li class="fs-6 text-midnightBlue fw-lighter"><a href="#" class="text-decoration-none text-midnightBlue">Digital Marketing</a></li>
@@ -500,7 +501,7 @@
               <li class="fs-6 text-midnightBlue fw-lighter"><a href="#" class="text-decoration-none text-midnightBlue">UI Design</a></li>
             </ul>
           </div>
-          <div class="d-flex justify-content-start align-items-start flex-column gap-5">
+          <div class="block-links gap-5">
             <h6 class="fs-6 text-midnightBlue fw-lighter opacity-50">Legal</h6>
             <ul class="list-unstyled d-flex flex-column gap-4">
               <li class="fs-6 text-midnightBlue fw-lighter"><a href="#" class="text-decoration-none text-midnightBlue">Privacy Policy</a></li>

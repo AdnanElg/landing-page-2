@@ -10,6 +10,141 @@
   font-family: "Inter", sans-serif;
 }
 
+#content-1-col-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 1200px) {
+  #content-1-col-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
+#content-2-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+@media (max-width: 1200px) {
+  #content-2-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+  }
+}
+#content-2-container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+@media (max-width: 1200px) {
+  #content-2-container .content {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+#content-2-container .content .block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.1rem;
+  margin-bottom: 1.05rem;
+  width: 100%;
+}
+#content-2-container .content .block p {
+  width: 100% !important;
+}
+@media (max-width: 1200px) {
+  #content-2-container .content .block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #content-2-container .content .block p {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+.cta-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (max-width: 1200px) {
+  .cta-text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+@media (max-width: 1200px) {
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+#footer .block-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media (max-width: 1200px) {
+  #footer .block-text {
+    justify-content: center;
+    align-items: center;
+  }
+}
+#footer .container-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+@media (max-width: 1200px) {
+  #footer .container-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#footer .container-links .block-liks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (max-width: 1200px) {
+  #footer .container-links .block-liks {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors

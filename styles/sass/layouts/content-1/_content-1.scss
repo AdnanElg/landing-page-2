@@ -1,0 +1,18 @@
+//-- ******* START SECTION CONTENT 1 ********** //
+
+#content-1-col-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+
+//-- ******* END SECTION CONTENT 1 ********** //
