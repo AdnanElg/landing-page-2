@@ -132,14 +132,15 @@
     align-items: center;
   }
 }
-#footer .container-links .block-liks {
+#footer .container-links .block-links {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  gap: 30px;
 }
 @media (max-width: 1200px) {
-  #footer .container-links .block-liks {
+  #footer .container-links .block-links {
     justify-content: center;
     align-items: center;
   }

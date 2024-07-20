@@ -36,11 +36,12 @@
       align-items: center;
     }
 
-    .block-liks {
+    .block-links {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
+      gap: 30px;
 
       @media (max-width: 1200px) {
         justify-content: center;
