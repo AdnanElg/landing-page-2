@@ -13,55 +13,65 @@
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./styles/css/index.css" />
+    <!-- Script : -->
+    <script defer src="./scripts/navbar.js"></script>
     <!-- Title -->
     <title>Brainwave</title>
   </head>
   <!-- ******* END HEAD ********** -->
   <body>
     <!-- ******* START HEADER ********** -->
-    <header class="container-fluid ps-5 pe-5 pt-4 pb-5 mb-5">
+    <header class="container-fluid ps-5 pe-5 mb-5 z-2">
+      <!-- ******* START NAVBAR ********** -->
       <nav class="d-flex justify-content-between align-items-center">
         <div class="d-flex justify-content-center align-items-center">
           <span class="fw-bold fs-3 text-midnightBlue">Brainwave.io</span>
         </div>
-        <div class="d-flex justify-content-center align-items-center">
           <ul
-            class="list-unstyled d-flex justify-content-center align-items-center gap-6 m-0"
+            id="lists-menu" 
           >
-            <li class="fw-bold text-midnightBlue fs-6">
-              <a class="text-decoration-none text-midnightBlue" href="#"
+            <li>
+              <a href="#"
                 >Demos</a
               >
             </li>
-            <li class="fw-bold text-midnightBlue fs-6">
-              <a class="text-decoration-none text-midnightBlue" href="#"
+            <li>
+              <a href="#"
                 >Pages</a
               >
             </li>
-            <li class="fw-bold text-midnightBlue fs-6">
-              <a class="text-decoration-none text-midnightBlue" href="#"
+            <li>
+              <a href="#"
                 >Support</a
               >
             </li>
-            <li class="fw-bold text-midnightBlue fs-6">
-              <a class="text-decoration-none text-midnightBlue" href="#"
+            <li>
+              <a href="#"
                 >Contact</a
               >
             </li>
           </ul>
-        </div>
         <div class="d-flex justify-content-center align-items-center">
           <button
-            class="fw-bold text-white border-0 fs-6 bg-royalBlue py-3 px-4 rounded-3"
+            class="fw-bold text-white border-0 fs-6 bg-royalBlue py-3 px-4 rounded-3 d-lg-block d-none"
           >
             Get started free
           </button>
+          <button id="btn-menu">
+            <img
+              src="./assets/svg/hamburger.svg"
+              alt="hamburger"
+              title="hamburger"
+            />
+            <img src="./assets/svg/close.svg" alt="close" title="close" />
+          </button>
         </div>
       </nav>
+      <!-- ******* END NAVBAR ********** -->
     </header>
     <!-- ******* END HEADER ********** -->
     <!-- ******* START SECTION HERO ********** -->
-    <section class="container pb-5">
+    <section class="container pb-5 pt-xl-0 pt-5 z-1">
       <div
         class="d-flex justify-content-center align-items-center flex-column mt-5 pt-5"
       >
@@ -74,7 +84,7 @@
           rental income and making sure you stay in high demand.
         </p>
         <div
-          class="d-flex justify-content-center align-items-center flex-row gap-6 mb-5 pb-5 pt-2"
+          class="d-flex flex-sm-row flex-column justify-content-center align-items-center flex-row gap-6 mb-5 pb-5 pt-2"
         >
           <button
             class="bg-royalBlue border-0 px-4 py-lg-4 py-3 rounded-3 d-flex flex-row justify-content-center align-items-center gap-5 text-white fw-bold fs-6"
@@ -82,9 +92,9 @@
             Get started for free
             <img
               class="img-fluid"
-              src="./assets/svg/arrow-right.svg"
-              alt="arrow-right"
-              title="arrow-right"
+              src="./assets/svg/arrow-right-white.svg"
+              alt="arrow-right-white"
+              title="arrow-right-white"
             />
           </button>
           <button class="border-0 bg-white text-midnightBlue fs-6 fw-bold">
@@ -102,7 +112,7 @@
     <!-- ******* END SECTION HERO ********** -->
     <!-- ******* START SECTION FEATURES ********** -->
     <section
-      class="container d-flex justify-content-around align-items-center flex-column flex-lg-row mt-5 pt-5 mb-5 pb-5 gap-6 gap-lg-0"
+      class="container d-flex justify-content-around align-items-center flex-column flex-lg-row mt-5 pt-5 mb-5 pb-5 gap-6 gap-lg-0 z-1"
     >
       <article
         class="d-flex flex-column justify-content-start align-items-start gap-4"
@@ -155,7 +165,7 @@
     </section>
     <!-- ******* END SECTION FEATURES ********** -->
     <!-- ******* START SECTION CONTENT 1 ********** -->
-    <section class="bg-cloudWhite h-auto w-100 my-5 py-5">
+    <section class="bg-cloudWhite h-auto w-100 my-5 py-5 z-1">
       <div
         class="container d-flex justify-content-around align-items-center flex-column flex-xl-row py-5 mt-5"
       >
@@ -177,9 +187,9 @@
             Get started for free
             <img
               class="img-fluid"
-              src="./assets/svg/arrow-right.svg"
-              alt="arrow-right"
-              title="arrow-right"
+              src="./assets/svg/arrow-right-white.svg"
+              alt="arrow-right-white"
+              title="arrow-right-white"
             />
           </button>
         </div>
@@ -195,7 +205,7 @@
     </section>
     <!-- ******* END SECTION CONTENT ********** -->
     <!-- ******* START SECTION FACTS ********** -->
-    <section class="container-fluid p-0 my-5">
+    <section class="container-fluid p-0 my-5 z-1">
       <div
         class="container d-flex flex-lg-row flex-column justify-content-around align-items-center my-5 py-5 gap-5 gap-lg-0"
       >
@@ -233,7 +243,7 @@
     </section>
     <!-- ******* END SECTION FACTS ********** -->
     <!-- ******* START SECTION CONTENT 2 ********** -->
-    <section class="my-5 py-5">
+    <section class="my-5 py-5 z-1">
       <div
         class="d-flex flex-column justify-content-center align-items-center gap-4 mt-5"
       >
@@ -260,7 +270,7 @@
             class="block"
           >
             <span
-              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center px-3 py-1"
+              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center px-6 py-8"
               >1</span
             >
             <div class="d-flex flex-column gap-3">
@@ -275,7 +285,7 @@
             class="block"
           >
             <span
-              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center px-3 py-1"
+              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center px-6 py-8"
               >2</span
             >
             <div class="d-flex flex-column gap-3">
@@ -292,7 +302,7 @@
             class="block"
           >
             <span
-              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center px-3 py-1"
+              class="text-royalBlue fs-6 bg-royalBlueLight rounded-circle d-flex justify-content-center align-items-center px-6 py-8"
               >3</span
             >
             <div class="d-flex flex-column gap-3">
@@ -310,7 +320,7 @@
     </section>
     <!-- ******* START SECTION CONTENT 2 ********** -->
     <!-- ******* START SECTION TESTIMONIAL ********** -->
-    <section class="bg-cloudWhite h-auto w-100 py-5">
+    <section class="bg-cloudWhite h-auto w-100 py-5 z-1">
       <div
         class="container d-flex flex-lg-row flex-column justify-content-around align-items-center"
       >
@@ -355,7 +365,7 @@
     </section>
     <!-- ******* END SECTION TESTIMONIAL ********** -->
     <!-- ******* START SECTION PRICING ********** -->
-    <section class="bg-midnightBlue h-auto w-100 py-5">
+    <section class="bg-midnightBlue h-auto w-100 py-5 z-1">
       <div class="container">
         <div class="d-flex flex-column gap-4 justify-content-center align-items-center mt-5 pt-5">
           <h4 class="text-white fw-bold fs-1">
@@ -366,21 +376,21 @@
           </p>
         </div>
         <div class="d-flex flex-xl-row flex-column gap-5 justify-content-center align-items-center mt-5 pt-4">
-          <article class="bg-white rounded-3 w-xl-25 w-75 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
+          <article class="bg-white rounded-3 w-xl-25 w-sm-75 w-100 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
             <span class="text-royalBlue fw-bold px-4 py-2 rounded-4 text bg-royalBlueLight text-center fs-6">Basic</span>
             <span class="text-center fw-bold display-5 pt-4">$29</span>
             <p class="text-center text-midnightBlue fs-5 fw-lighter opacity-75">One time purchase</p>
             <p class="text-center text-midnightBlue fs-6 fw-light lh-lg">With lots of unique blocks, you can <br/> easily build a page without coding. <br/> Build your next landing page.</p>
             <button class="fw-bold text-white border-0 fs-6 bg-royalBlue py-lg-4 py-3 px-4 rounded-3 w-90">Get started for free</button>
           </article>
-          <article class="bg-white rounded-3 w-xl-25 w-75 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
+          <article class="bg-white rounded-3 w-xl-25 w-sm-75 w-100 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
             <span class="text-royalBlue fw-bold px-4 py-2 rounded-4 text bg-royalBlueLight text-center fs-6">Standard</span>
             <span class="text-center fw-bold display-5 pt-4">$49</span>
             <p class="text-center text-midnightBlue fs-5 fw-lighter opacity-75">One time purchase</p>
             <p class="text-center text-midnightBlue fs-6 fw-light lh-lg">With lots of unique blocks, you can <br/> easily build a page without coding. <br/> Build your next landing page.</p>
             <button class="fw-bold text-white border-0 fs-6 bg-royalBlue  py-lg-4 py-3  px-4 rounded-3 w-90">Get started for free</button>
           </article>
-          <article class="bg-white rounded-3 w-xl-25 w-75 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
+          <article class="bg-white rounded-3 w-xl-25 w-sm-75 w-100 h-auto pt-5 pb-4 d-flex justify-content-center align-items-center flex-column gap-4">
             <span class="text-royalBlue fw-bold px-4 py-2 rounded-4 text bg-royalBlueLight text-center fs-6">Premium</span>
             <span class="text-center fw-bold display-5 pt-4">$99</span>
             <p class="text-center text-midnightBlue fs-5 fw-lighter opacity-75">One time purchase</p>
@@ -392,7 +402,7 @@
           <div class="d-flex flex-xl-row flex-column align-items-center justify-content-center gap-7 mt-5 pt-5">
             <div class="d-flex flex-column justify-content-start align-items-start">
                 <div class="d-flex gap-4 flex-row justify-content-start align-items-start">
-                  <span class="rounded-circle bg-royalGreen px-3 h-auto text-center fs-5 text-white">?</span>
+                  <span class="rounded-circle bg-royalGreen px-6 py-7 text-center fs-5 text-white">?</span>
                   <h5 class="fw-bold text-white fs-5">Can I use Albino for my clients?</h5>
                 </div>
                 <div class="ps-5 ms-4"> 
@@ -402,7 +412,7 @@
             </div>
             <div class="d-flex flex-column justify-content-start align-items-start">
               <div class="d-flex gap-4 flex-row justify-content-start align-items-start">
-                <span class="rounded-circle bg-royalGreen px-3 h-auto text-center fs-5 text-white">?</span>
+                <span class="rounded-circle bg-royalGreen px-6 py-7 text-center fs-5 text-white">?</span>
                 <h5 class="fw-bold text-white fs-5">Can I use Albino for my clients?</h5>
               </div>
               <div class="ps-5 ms-4"> 
@@ -413,7 +423,7 @@
           <div class="d-flex  flex-xl-row flex-column align-items-center justify-content-center gap-7 mt-5 pt-5">
             <div class="d-flex flex-column justify-content-start align-items-start">
               <div class="d-flex gap-4 flex-row justify-content-start align-items-start">
-                <span class="rounded-circle bg-royalGreen px-3 h-auto text-center fs-5 text-white">?</span>
+                <span class="rounded-circle bg-royalGreen px-6 py-7 text-center fs-5 text-white">?</span>
                 <h5 class="fw-bold text-white fs-5">Can I use Albino for my clients?</h5>
               </div>
               <div class="ps-5 ms-4"> 
@@ -422,7 +432,7 @@
             </div>
             <div class="d-flex flex-column justify-content-start align-items-start">
               <div class="d-flex gap-4 flex-row justify-content-start align-items-start">
-                <span class="rounded-circle bg-royalGreen px-3 h-auto text-center fs-5 text-white">?</span>
+                <span class="rounded-circle bg-royalGreen px-6 py-7 text-center fs-5 text-white">?</span>
                 <h5 class="fw-bold text-white fs-5">Can I use Albino for my clients?</h5>
               </div>
               <div class="ps-5 ms-4"> 
@@ -432,13 +442,13 @@
           </div>
         </div>
         <div class="d-flex justify-content-center align-items-center my-5 py-5">
-          <p class="text-white fs-5 fw-light mt-5">Haven’t got your answer? <span class="text-royalGreen fs-5 fw-light">Contact our support now</span></p>
+          <p class="text-white fs-5 fw-light mt-5 text-center">Haven’t got your answer? <span class="text-royalGreen fs-5 fw-light">Contact our support now</span></p>
         </div>
       </div>
     </section>
     <!-- ******* END SECTION PRICING ********** -->
     <!-- ******* START SECTION CTA ********** -->
-    <section class="container-fluid my-5 py-5 px-0">
+    <section class="container-fluid my-5 py-5 px-0 z-1">
       <div class="container d-flex flex-xl-row flex-column justify-content-around align-items-center pb-3">
         <div class="gap-3 my-5 cta-text">
           <h5 class="text-midnightBlue fs-2 fw-bold">
@@ -449,9 +459,9 @@
             without coding. Build your next landing page.
           </p>
         </div>
-        <div class="d-flex flex-row justify-content-start align-items-start gap-5">
+        <div class="d-flex flex-sm-row flex-column justify-content-start align-items-start gap-5">
           <button class="d-flex justify-content-center align-items-center flex-row gap-5 border-0 bg-royalBlueLight px-4 py-3 rounded-3 text-royalBlue fw-bold">Learn more <img src="./assets/svg/arrow-right-purple.svg" alt="arrow-right-purple" title="arrow-right-purple"></button>
-          <button class="d-flex justify-content-center align-items-center flex-row gap-5 border-0 bg-royalBlue px-4 py-3 rounded-3 text-white fw-bold">Get it now <img src="./assets/svg/arrow-right.svg" alt="arrow-right" title="arrow-right"></button>
+          <button class="d-flex justify-content-center align-items-center flex-row gap-5 border-0 bg-royalBlue px-4 py-3 rounded-3 text-white fw-bold">Get it now <img src="./assets/svg/arrow-right-white.svg" alt="arrow-right-white" title="arrow-right-white"></button>
         </div>
       </div>
       <div class="w-100 border-1 bg-cloudWhite opacity-50 mt-5">
@@ -460,7 +470,7 @@
     </section>
     <!-- ******* END SECTION CTA ********** -->
     <!-- ******* START SECTION FOOTER ********** -->
-    <section class="container py-3">
+    <section class="container py-3 z-1">
       <div id="footer" class="py-5 gap-xl-0 gap-6">
         <div class="block-text gap-4">
           <h5 class="text-midnightBlue fs-2 fw-bold">Brainwave.io</h5>

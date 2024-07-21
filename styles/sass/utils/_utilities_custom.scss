@@ -1,5 +1,5 @@
 // ******** IMPORTS VARIABLES COLORS *********** //
-@import "./variables_overrides";
+@use "./variables_overrides";
 
 // ******** START UTILITIES *********** //
 $utilities: (
@@ -7,20 +7,20 @@ $utilities: (
     property: color,
     class: text,
     values: (
-      "midnightBlue": $midnightBlue,
-      "royalBlue": $royalBlue,
-      "royalGreen": $royalGreen,
+      "midnightBlue": variables_overrides.$midnightBlue,
+      "royalBlue": variables_overrides.$royalBlue,
+      "royalGreen": variables_overrides.$royalGreen,
     ),
   ),
   "background-color": (
     property: background-color,
     class: bg,
     values: (
-      "royalBlue": $royalBlue,
-      "cloudWhite": $cloudWhite,
-      "royalBlueLight": $royalBlueLight,
-      "midnightBlue": $midnightBlue,
-      "royalGreen": $royalGreen,
+      "royalBlue": variables_overrides.$royalBlue,
+      "cloudWhite": variables_overrides.$cloudWhite,
+      "royalBlueLight": variables_overrides.$royalBlueLight,
+      "midnightBlue": variables_overrides.$midnightBlue,
+      "royalGreen": variables_overrides.$royalGreen,
     ),
   ),
   "padding-y": (
@@ -29,11 +29,28 @@ $utilities: (
     class: py,
     values: (
       0: 0,
-      1: $spacer * 0.25,
-      2: $spacer * 0.5,
-      3: $spacer,
-      4: $spacer * 1.5,
-      5: $spacer * 3,
+      1: variables_overrides.$spacer * 0.25,
+      2: variables_overrides.$spacer * 0.5,
+      3: variables_overrides.$spacer,
+      4: variables_overrides.$spacer * 1.5,
+      5: variables_overrides.$spacer * 3,
+      6: variables_overrides.$spacer - 0.2,
+      7: variables_overrides.$spacer - 0.6,
+      8: variables_overrides.$spacer - 0.5,
+    ),
+  ),
+  "padding-x": (
+    responsive: true,
+    property: padding-left padding-right,
+    class: px,
+    values: (
+      0: 0,
+      1: variables_overrides.$spacer * 0.25,
+      2: variables_overrides.$spacer * 0.5,
+      3: variables_overrides.$spacer,
+      4: variables_overrides.$spacer * 1.5,
+      5: variables_overrides.$spacer * 3,
+      6: variables_overrides.$spacer,
     ),
   ),
   "gap": (
@@ -42,13 +59,13 @@ $utilities: (
     class: gap,
     values: (
       0: 0,
-      1: $spacer * 0.25,
-      2: $spacer * 0.5,
-      3: $spacer,
-      4: $spacer * 1.5,
-      5: $spacer * 3,
-      6: $spacer * 5,
-      7: $spacer * 12,
+      1: variables_overrides.$spacer * 0.25,
+      2: variables_overrides.$spacer * 0.5,
+      3: variables_overrides.$spacer,
+      4: variables_overrides.$spacer * 1.5,
+      5: variables_overrides.$spacer * 3,
+      6: variables_overrides.$spacer * 5,
+      7: variables_overrides.$spacer * 12,
     ),
   ),
   "width": (
